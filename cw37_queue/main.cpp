@@ -5,6 +5,7 @@
 #include <string>
 #include <Windows.h>
 #include "PriorityQueue.h"
+#include "Person.h"
 using namespace std;
 
 int main()
@@ -73,5 +74,18 @@ int main()
 
     // -------------------------------------------------------------------------
 
+    MyQueue::PriorityQueue<Person> a;
+
+    a.push_back(Person("Mykola", 2));
+    a.push_back(Person("Sasha", 1));
+    a.push_back(Person("Olena", 4));
+    a.push_back(Person("Oleg", 0));
+
+    cout << "==============================\n";
+    while (!a.isEmpty()) {
+        a.first().showInfo();
+
+        a.pop_front();
+    }
 
 }

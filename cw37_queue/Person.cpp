@@ -28,3 +28,8 @@ void Person::showInfo() const
     cout << "Priority: " << priority << endl << endl;
 
 }
+
+bool Person::operator<(const Person& obj) const&
+{
+    return this->priority < obj.priority;
+}
