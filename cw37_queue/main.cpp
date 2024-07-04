@@ -21,6 +21,14 @@ int main()
     //    pv311.pop_front();
     //}
 
+    vector<AudioRecord> ar;
 
+    ar.push_back(AudioRecord("Single Ladies", "Beyonce", 2008));
+    ar.push_back(AudioRecord("Umbrella", "Rihanna featuring Jay-Z", 2007));
+    ar.push_back(AudioRecord("Shake it Off", "Taylor Swift", 2016));
+    ar.push_back(AudioRecord("Toxic", "Britney Spears", 2003));
+    ar.push_back(AudioRecord("Rolling in the Deep", "Adele", 2011));
+    ar.push_back(AudioRecord("Firework", "Katy Perry", 2010));
+    ar.push_back(AudioRecord("Blinding Lights", "The Weeknd", 2019));
 
 }
