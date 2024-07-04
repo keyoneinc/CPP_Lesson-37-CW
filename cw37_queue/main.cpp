@@ -54,22 +54,24 @@ int main()
     // -------------------------------------------------------------------------
 
 
-    MyQueue::PriorityQueue<int> a;
+    //MyQueue::PriorityQueue<int> a;
 
-    a.push_back(34);
-    a.push_back(64);
-    a.push_back(57);
-    a.push_back(12);
-    a.push_back(92);
-    a.showInfo();
-    cout << "______________________________\n";
-    while (!a.isEmpty())
-    {
-        a.showInfo();
-        cout << a.first() << endl << endl;
-        a.pop_front();
-    }
+    //a.push_back(34);
+    //a.push_back(64);
+    //a.push_back(57);
+    //a.push_back(12);
+    //a.push_back(92);
+    //a.showInfo();
+    //cout << "______________________________\n";
+    //while (!a.isEmpty())
+    //{
+    //    a.showInfo();
+    //    cout << a.first() << endl << endl;
+    //    a.pop_front();
+    //}
 
+
+    // -------------------------------------------------------------------------
 
 
 }

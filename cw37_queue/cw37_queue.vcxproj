@@ -129,10 +129,12 @@
   <ItemGroup>
     <ClCompile Include="AudioRecord.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Person.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioRecord.h" />
     <ClInclude Include="MyQueue.h" />
+    <ClInclude Include="Person.h" />
     <ClInclude Include="PriorityQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
