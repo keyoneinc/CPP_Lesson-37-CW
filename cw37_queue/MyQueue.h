@@ -31,11 +31,30 @@ namespace MyQueue {
 			//реалізація
 		}
 
-		void pop_front() {//First Out
+		void pop_front() {
+			if (!isEmpty()) {
+				if (head == tail) {
+					delete head;
+					head = tail = nullptr;
+				}
+				else {
+					head = head->next;
+					delete head->prev;
+					head->prev = nullptr;
+				}
+			}
 
 		}
-		void push_back() {
-
+		void push_back(U value) {
+			Node<U>* el = new Node<U>(value);
+			if (isEmpty()) {
+				head = tail = el;
+			}
+			else {
+				tail->next = el;
+				el->prev = tail;
+				tail = el;
+			}
 		}
 		U first() const {// First element
 			if (isEmpty()) throw "Queue is empty.";
