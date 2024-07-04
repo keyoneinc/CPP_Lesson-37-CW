@@ -3,6 +3,7 @@
 #include "AudioRecord.h"
 #include <vector>
 #include <string>
+#include <Windows.h>
 using namespace std;
 
 int main()
@@ -30,5 +31,19 @@ int main()
     ar.push_back(AudioRecord("Rolling in the Deep", "Adele", 2011));
     ar.push_back(AudioRecord("Firework", "Katy Perry", 2010));
     ar.push_back(AudioRecord("Blinding Lights", "The Weeknd", 2019));
+    
+    // created audio player with queue of tracks
+    MyQueue::Queue<AudioRecord> player;
+    player.push_back(ar[2]);
+    player.push_back(ar[3]);
+    player.push_back(ar[5]);
+
+    cout << "Playing: " << endl;
+    while (!player.isEmpty()) {
+        player.first().showInfo();
+        Sleep(2000);
+        player.pop_front();
+
+    }
 
 }
